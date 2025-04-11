@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 import Tarjeta from '../tarjetas/tarjetaFotoDescripcion.vue'
 
-// Declaración correcta de las imágenes
-const imagenes = ref([
+// Creamos una constante "array" que dentro guarda objetos con los atributos url y titulo, facilitando su paso a otra clase.
+const objetos = ref([
     {
         title: "Mercurio",
         url: "mercurio.jpg"
@@ -17,14 +17,16 @@ const imagenes = ref([
         url: "saturno.jpg"
     }
 ]);
-console.log("imagenes",imagenes.value)
+
+//Comprobamos que funciona
+console.log("objetos",objetos.value)
 </script>
 
 <template>
   <section>
-    <!-- Pasamos las imágenes como propiedades al componente Tarjeta -->
-    <template v-for="img in imagenes">
-        <Tarjeta :title="img.title" :img="img.url"/>
+    <!-- Pasamos por cada objeto en la array, con props a tarjetaFotoDescripcion -->
+    <template v-for="objeto in objetos">
+        <Tarjeta :title="objeto.title" :img="objeto.url"/>
     </template>
   </section>
 </template>

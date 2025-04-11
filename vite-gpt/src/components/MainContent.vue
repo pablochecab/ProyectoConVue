@@ -9,7 +9,7 @@ const mostrarSeccionExtra = ref(false)
 function cargarNuevaSeccion() {
   mostrarSeccionExtra.value = !mostrarSeccionExtra.value
 }
-
+// Proveemos la funcion al archivo "boton.vue"
 provide('cargarSeccion', cargarNuevaSeccion)
 </script>
 
@@ -22,7 +22,9 @@ provide('cargarSeccion', cargarNuevaSeccion)
 
     <Section1 />
     <Button />
+    <!-- Añadimos una condición de que solo se muestre si es verdadero. -->
     <Section1 v-if="mostrarSeccionExtra" />
+    <!-- Como idea para practicar podriamos hacer que cada vez que se haga click a otro botón, se cree una sección nueva. -->
   </main>
 </template>
 

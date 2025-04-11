@@ -10,8 +10,9 @@ const descripcionEmpresa = ref('Expertos en fotografía y diseño web')
 
 <template>
   <body>
+    <!-- Ejemplo de como pasar props, en este caso al header -->
     <Header :titulo="nombreEmpresa" :descripcion="descripcionEmpresa" />
-    
+    <!-- Ejemplo de como sustituir un slot -->
     <MainContent #titulo>
       La galaxia a otro nivel
     </MainContent>

@@ -1,11 +1,13 @@
 <script setup>
 import { inject } from 'vue'
 
+// Recibimos el archivo de MainContent, para así aquí poder programar que el botón ejecute esa función.
 const toggleNewSection = inject('cargarSeccion')
 </script>
 
 <template>
   <div>
+    <!-- Utilizamos un EventListener para que cuando se hace click, ejecute la funcion. -->
     <button @click="toggleNewSection">Ver más</button>
   </div>
 </template>
