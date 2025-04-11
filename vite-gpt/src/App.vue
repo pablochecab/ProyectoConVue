@@ -13,7 +13,7 @@ const descripcionEmpresa = ref('Expertos en fotografía y diseño web')
     <Header :titulo="nombreEmpresa" :descripcion="descripcionEmpresa" />
     
     <MainContent #titulo>
-      TITULO DEL MAIN
+      La galaxia a otro nivel
     </MainContent>
     
     <Footer />

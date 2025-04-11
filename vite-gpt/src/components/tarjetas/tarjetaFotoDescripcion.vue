@@ -17,14 +17,20 @@ const url = `/${props.img}`;
 
 <style scoped>
 article {
-  padding: 1rem;
   background-color: #eee;
   text-align: center;
+  border: solid 2px black;
+
+}
+
+p {
+  color: black;
 }
 
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
+
 </style>
 

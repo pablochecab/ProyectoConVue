@@ -5,16 +5,16 @@ import Tarjeta from '../tarjetas/tarjetaFotoDescripcion.vue'
 // Declaración correcta de las imágenes
 const imagenes = ref([
     {
-        title: "Titulo1",
-        url: "fondo.jpg"
+        title: "Mercurio",
+        url: "mercurio.jpg"
     },
     {
-        title: "Titulo2",
-        url: "fondo.jpg"
+        title: "Tierra",
+        url: "tierra.jpg"
     },
     {
-        title: "Titulo3",
-        url: "fondo.jpg"
+        title: "Saturno",
+        url: "saturno.jpg"
     }
 ]);
 console.log("imagenes",imagenes.value)
@@ -31,6 +31,9 @@ console.log("imagenes",imagenes.value)
 
 <style>
   section {
-    background-image: url();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+    padding: 2em;
   }
 </style>
